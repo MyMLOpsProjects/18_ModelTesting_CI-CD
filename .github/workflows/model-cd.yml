@@ -2,9 +2,10 @@ name: ML CD Pipeline
 
 on:
   workflow_run:
-    workflows: ["model-ci"]
+    workflows: ["Model CI Pipeline"]  # name of your CI workflow
     types:
       - completed
+
 
 jobs:
   deploy-model-api:
