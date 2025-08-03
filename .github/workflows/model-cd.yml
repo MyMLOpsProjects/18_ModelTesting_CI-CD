@@ -6,7 +6,7 @@ on:
     paths:
       - 'models/**'
       - 'app/**'
-      - '.github/workflows/model_cd.yml'
+      - '.github/workflows/model-cd.yml'
 
 jobs:
   deploy-model-api:
