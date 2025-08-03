@@ -1,4 +1,4 @@
-name: Model Deployment (CD)
+name: ML CD Pipeline
 
 on:
   push:
