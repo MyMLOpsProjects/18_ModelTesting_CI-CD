@@ -31,7 +31,7 @@ jobs:
       - name: Upload model.pkl to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: trained-model
+          name: iris-model
           path: models/iris_model.pkl
 
       - name: Upload deepcheck report to GitHub Artifact
