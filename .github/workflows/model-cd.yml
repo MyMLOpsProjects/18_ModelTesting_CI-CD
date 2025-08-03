@@ -30,7 +30,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: iris-model
-        path: models/iris_model.pkl
+        path: models/
   
     - name: Start Uvicorn (Dev Only — for demo/testing)
       run: |
