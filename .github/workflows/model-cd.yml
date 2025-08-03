@@ -1,12 +1,10 @@
 name: ML CD Pipeline
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'models/**'
-      - 'app/**'
-      - '.github/workflows/model-cd.yml'
+  workflow_run:
+    workflows: ["model-ci"]
+    types:
+      - completed
 
 jobs:
   deploy-model-api:
@@ -38,4 +36,3 @@ jobs:
         cd app
         nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
 
-        
